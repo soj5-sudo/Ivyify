@@ -3,233 +3,301 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ivyfy — Ivy League Admissions Consulting</title>
-<meta name="description" content="Ivyfy pairs students with advisors who got in themselves — a Forbes 30 Under 30 founder and a top academic strategist — to build applications that sound like them.">
+<title>Ivyfy — Ivy League Admissions, Engineered</title>
+<meta name="description" content="Ivyfy pairs students with advisors who got in themselves — a Forbes 30 Under 30 founder and a top academic strategist — to build an application that sounds like you, not a template.">
+<meta name="theme-color" content="#F7FAF8">
+<meta property="og:title" content="Ivyfy — Ivy League Admissions, Engineered">
+<meta property="og:description" content="Advisors who got in themselves, building applications that sound like you.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="ivyfy.css">
 </head>
 <body>
 
-<header>
-  <nav class="wrap">
-    <a href="#" class="logo">
-      <svg class="leaf-icon" viewBox="0 0 32 32"><path class="body" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/><path class="vein" d="M16 6v22"/></svg>
-      Ivyfy
+<!-- Ambient liquid-glass background: soft ivy light behind the frosted panels -->
+<div class="ambient" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <span class="grain"></span>
+</div>
+
+<header id="top">
+  <nav class="wrap glass-nav">
+    <a href="#top" class="logo" aria-label="Ivyfy home">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path class="leaf" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/><path class="vein" d="M16 6v22"/></svg>
+      <span>Ivyfy</span>
     </a>
     <div class="nav-links">
-      <a href="#method">Approach</a>
-      <a href="#advisors">Advisors</a>
+      <a href="#method">Method</a>
+      <a href="#process">Process</a>
       <a href="#results">Results</a>
-      <a href="#admits">Admits</a>
+      <a href="#team">Team</a>
     </div>
     <div class="nav-right">
-      <a href="#apply" class="btn btn-primary">Book a Consult</a>
+      <a href="#admits" class="nav-ghost">Admits</a>
+      <a href="https://cal.com/soham-jariwala-4fvbkw/15min" target="_blank" rel="noopener" class="btn btn-primary">Book a Demo</a>
     </div>
   </nav>
 </header>
 
+<!-- ============ HERO — particles converge into the wordmark ============ -->
 <section class="hero">
-  <svg class="vine" viewBox="0 0 300 500" fill="none">
-    <path d="M20 10 C 80 80, -20 160, 60 230 C 140 300, 20 370, 90 460" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
-    <g opacity="0.85">
-      <path class="body" fill="currentColor" transform="translate(10,30) scale(0.5) rotate(20)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-      <path class="body" fill="currentColor" transform="translate(70,90) scale(0.4) rotate(-30)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-      <path class="body" fill="currentColor" transform="translate(-10,180) scale(0.55) rotate(60)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-      <path class="body" fill="currentColor" transform="translate(90,260) scale(0.45) rotate(-10)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-      <path class="body" fill="currentColor" transform="translate(20,360) scale(0.5) rotate(40)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-      <path class="body" fill="currentColor" transform="translate(100,430) scale(0.4) rotate(-20)" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/>
-    </g>
-  </svg>
+  <div class="hero-canvas-wrap">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <noscript><h1 class="hero-fallback">Ivyfy</h1></noscript>
+  </div>
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="leaf-dot"><svg viewBox="0 0 32 32" class="leaf-icon" style="color:var(--gold)"><path class="body" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/></svg></span>Ivy League Admissions Consulting</div>
-    <h1>Every great application starts with a story <em>worth telling.</em></h1>
-    <p class="sub">Ivyfy pairs you with advisors who got in themselves — a Forbes 30 Under 30 founder and a top academic strategist, both current Cornell students — to build an application that sounds like you, not a template.</p>
-    <div class="hero-ctas">
-      <a href="#apply" class="btn btn-primary">Book a Free Consult</a>
-      <a href="#admits" class="btn btn-ghost">See What Students Say</a>
+    <h1 class="sr-only">Ivyfy — Ivy League admissions, engineered.</h1>
+    <p class="eyebrow reveal"><span class="eyebrow-dot"></span>Ivy League Admissions Consulting</p>
+    <p class="hero-sub reveal">Advisors who <em>got in themselves</em> — a Forbes 30&nbsp;Under&nbsp;30 founder and a top academic strategist, both current Cornell students — building an application that sounds like you, not a template.</p>
+    <div class="hero-ctas reveal">
+      <a href="https://cal.com/soham-jariwala-4fvbkw/15min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book a Free Consult</a>
+      <a href="#admits" class="btn btn-glass btn-lg">See who got in</a>
     </div>
   </div>
+  <a href="#marquee" class="scroll-cue reveal" aria-label="Scroll down">
+    <span class="scroll-cue-line"></span>
+  </a>
 </section>
 
-<div class="trust">
-  <div class="trust-track" id="trustTrack">
-    <span><span>—</span>Cornell University</span>
-    <span><span>—</span>Forbes 30 Under 30</span>
-    <span><span>—</span>504 Found, 20,000+ Students Reached</span>
-    <span><span>—</span>Harvard University</span>
-    <span><span>—</span>Stanford University</span>
-    <span><span>—</span>MIT</span>
-    <span><span>—</span>Yale University</span>
-    <span><span>—</span>Princeton University</span>
-    <span><span>—</span>Columbia University</span>
-    <span><span>—</span>University of Pennsylvania</span>
-    <span><span>—</span>Oxford University</span>
-    <span><span>—</span>Cambridge University</span>
-    <span><span>—</span>Cornell University</span>
-    <span><span>—</span>Forbes 30 Under 30</span>
-    <span><span>—</span>504 Found, 20,000+ Students Reached</span>
-    <span><span>—</span>Harvard University</span>
-    <span><span>—</span>Stanford University</span>
-    <span><span>—</span>MIT</span>
-    <span><span>—</span>Yale University</span>
-    <span><span>—</span>Princeton University</span>
-    <span><span>—</span>Columbia University</span>
-    <span><span>—</span>University of Pennsylvania</span>
-    <span><span>—</span>Oxford University</span>
-    <span><span>—</span>Cambridge University</span>
+<!-- ============ THE "SCROLL WHEEL" — infinite admits marquee (jewellabs) ============ -->
+<div class="marquee" id="marquee" aria-label="Universities our students have been admitted to">
+  <div class="marquee-label">Students advised into</div>
+  <div class="marquee-viewport">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- one canonical set; JS clones it for a seamless loop -->
+      <span class="m-item">Cornell</span>
+      <span class="m-item">Harvard</span>
+      <span class="m-item">Stanford</span>
+      <span class="m-item">MIT</span>
+      <span class="m-item">Yale</span>
+      <span class="m-item">Princeton</span>
+      <span class="m-item">Columbia</span>
+      <span class="m-item">Penn</span>
+      <span class="m-item">Brown</span>
+      <span class="m-item">Dartmouth</span>
+      <span class="m-item">Oxford</span>
+      <span class="m-item">Cambridge</span>
+      <span class="m-item">Duke</span>
+      <span class="m-item">Northwestern</span>
+    </div>
   </div>
 </div>
 
-<section id="method" class="wrap">
+<!-- ============ METHOD — "One studio. Four crafts." (mirrors jewellabs platform) ============ -->
+<section id="method" class="wrap section">
   <div class="section-head reveal">
-    <div class="eyebrow">How We Work</div>
-    <h2>A three-step admissions strategy, built around you.</h2>
+    <p class="kicker">The Method</p>
+    <h2>One studio. <em>Four crafts.</em></h2>
+    <p class="section-lede">No templates and no ghost-writing. A clear process for the parts of an application that are hardest to do on your own.</p>
   </div>
-  <div class="method-list">
-    <div class="method-row reveal">
-      <div class="method-num">01 / Discover</div>
-      <div>
-        <h3>We map your story before we write a word.</h3>
-        <p>Academics, activities, the parts of your life that don't fit on a form — we spend real time finding the throughline that connects them, so everything we write afterward has somewhere to point.</p>
+  <div class="card-grid">
+    <article class="glass-card reveal">
+      <div class="card-index">01</div>
+      <h3>Story Architecture</h3>
+      <p>We map your story first — academics, activities, and the context that never fits on a form — so the essays have something real to build on.</p>
+      <div class="tag-row"><span class="tag">Narrative</span><span class="tag">Positioning</span></div>
+    </article>
+    <article class="glass-card reveal">
+      <div class="card-index">02</div>
+      <h3>Essay Craft</h3>
+      <p>Personal statement, supplements, and the activities list — drafted and revised in your own voice until they're right.</p>
+      <div class="tag-row"><span class="tag">Personal Statement</span><span class="tag">Supplements</span></div>
+    </article>
+    <article class="glass-card reveal">
+      <div class="card-index">03</div>
+      <h3>School Strategy</h3>
+      <p>We build your school list and tune each application to what that specific committee is looking for.</p>
+      <div class="tag-row"><span class="tag">List Building</span><span class="tag">Fit</span></div>
+    </article>
+    <article class="glass-card reveal">
+      <div class="card-index">04</div>
+      <h3>The Last Mile</h3>
+      <p>Course selection, testing plan, transcript review, and mock interviews — the academic side, handled.</p>
+      <div class="tag-row"><span class="tag">Interviews</span><span class="tag">Testing</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROCESS — "Four steps. One acceptance." (mirrors jewellabs) ============ -->
+<section id="process" class="wrap section">
+  <div class="section-head reveal">
+    <p class="kicker">How it works</p>
+    <h2>Four steps. <em>One acceptance.</em></h2>
+  </div>
+  <div class="process-list">
+    <div class="process-row reveal">
+      <div class="process-num">01</div>
+      <div class="process-body">
+        <h3>Discover</h3>
+        <p>A working session where we map your academics, activities, and goals, and find the thread that connects them.</p>
       </div>
     </div>
-    <div class="method-row reveal">
-      <div class="method-num">02 / Craft</div>
-      <div>
-        <h3>We build the application, sentence by sentence.</h3>
-        <p>Essays, activities lists, and interview prep — drafted and redrafted in your voice, not ours. You'll never submit a sentence you wouldn't say out loud.</p>
+    <div class="process-row reveal">
+      <div class="process-num">02</div>
+      <div class="process-body">
+        <h3>Craft</h3>
+        <p>We build the application piece by piece — essays, activities, and interview prep — revised until it's sharp.</p>
       </div>
     </div>
-    <div class="method-row reveal">
-      <div class="method-num">03 / Deliver</div>
-      <div>
-        <h3>We tune every application to the school reading it.</h3>
-        <p>What Cornell wants to see and what Princeton wants to see aren't the same thing. We finalize each application around what that specific committee actually cares about.</p>
+    <div class="process-row reveal">
+      <div class="process-num">03</div>
+      <div class="process-body">
+        <h3>Tune</h3>
+        <p>Each application is finalized around what that specific school is looking for.</p>
+      </div>
+    </div>
+    <div class="process-row reveal">
+      <div class="process-num">04</div>
+      <div class="process-body">
+        <h3>Deliver</h3>
+        <p>Submission strategy, deadlines, and a final review on everything. One point of contact from the first call to the last decision.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="results">
-  <div class="results reveal">
-    <div class="results-inner">
-      <div class="eyebrow">Results</div>
-      <h2>Numbers our students have earned.</h2>
-      <div class="stat-grid">
-        <div class="stat"><div class="num">95%</div><div class="label">Admitted to a top-20 national university</div></div>
-        <div class="stat"><div class="num">2</div><div class="label">Advisors who've done it themselves</div></div>
-        <div class="stat"><div class="num">20K+</div><div class="label">Students reached through our founders' own nonprofit work</div></div>
-        <div class="stat"><div class="num">1:1</div><div class="label">Advisor attention, every student, every draft</div></div>
-      </div>
-      <p class="results-note">Figures reflect students advised through Ivyfy's current cohort and founders' prior work at 504 Found.</p>
+<!-- ============ RESULTS — stat glass cards ============ -->
+<section id="results" class="wrap section">
+  <div class="section-head reveal">
+    <p class="kicker">Results</p>
+    <h2>Numbers our students <em>have earned.</em></h2>
+  </div>
+  <div class="stat-grid">
+    <div class="glass-stat reveal">
+      <div class="stat-num" data-count="95" data-suffix="%">95%</div>
+      <div class="stat-label">Admitted to a top-20 national university</div>
+    </div>
+    <div class="glass-stat reveal">
+      <div class="stat-num" data-count="20" data-suffix="K+">20K+</div>
+      <div class="stat-label">Students reached through our founders' nonprofit, 504 Found</div>
+    </div>
+    <div class="glass-stat reveal">
+      <div class="stat-num">1:1</div>
+      <div class="stat-label">Advisor attention on every student, every draft</div>
+    </div>
+    <div class="glass-stat reveal">
+      <div class="stat-num" data-count="2" data-suffix="">2</div>
+      <div class="stat-label">Advisors who have done it themselves</div>
     </div>
   </div>
+  <p class="fine-print reveal">Figures reflect students advised through Ivyfy's current cohort and our founders' prior work at 504&nbsp;Found.</p>
 </section>
 
-<section id="advisors" class="wrap">
+<!-- ============ TEAM — founders big, team small ============ -->
+<section id="team" class="wrap section">
   <div class="section-head reveal">
-    <div class="eyebrow">Meet Your Advisors</div>
-    <h2>Advisors who've been through it.</h2>
+    <p class="kicker">The Team</p>
+    <h2>The people <em>who build your application.</em></h2>
+    <p class="section-lede">You work with the founders directly, backed by a small bench of consultants and editors who have been through it themselves.</p>
   </div>
-  <div class="advisor-grid">
-    <div class="advisor-card reveal">
-      <div class="avatar">KW</div>
-      <h3>Khandaker Wasi</h3>
-      <span class="advisor-tag">Forbes 30 Under 30 · Cornell University</span>
-      <p>Wasi co-founded 504 Found, a nonprofit that grew to reach more than 20,000 students across 50 states and 32 countries — work that earned him a spot on the Forbes 30 Under 30 list. He's now a rising sophomore at Cornell, building an AI company on the side. With students, he focuses on the hardest part to see from the inside: the throughline, the "why," and turning a list of activities into one coherent person.</p>
-      <div class="badge-row">
-        <span class="badge">Personal Statement</span>
-        <span class="badge">Activities List</span>
-        <span class="badge">Founder Story</span>
-      </div>
-    </div>
-    <div class="advisor-card reveal">
-      <div class="avatar">SJ</div>
+  <div class="team-leads">
+    <article class="lead-card reveal">
+      <div class="team-top"><span class="team-role">Co-founder</span><span class="team-badge">SJ</span></div>
       <h3>Soham Jariwala</h3>
-      <span class="advisor-tag">Academic Strategist · Cornell University</span>
-      <p>Soham is a sophomore at Cornell, where he co-founded an AI infrastructure company. He specializes in the academic side of admissions — course selection, testing strategy, and building a transcript that reads to an admissions committee as a coherent story rather than a checklist.</p>
-      <div class="badge-row">
-        <span class="badge">Course Strategy</span>
-        <span class="badge">Testing Plan</span>
-        <span class="badge">Transcript Review</span>
-      </div>
-    </div>
+      <p class="team-title">Chief Executive Officer</p>
+      <p class="team-edu">Cornell</p>
+      <p class="team-bio">Leads academic strategy — course selection, testing, and building a transcript that reads as one coherent story.</p>
+    </article>
+    <article class="lead-card reveal">
+      <div class="team-top"><span class="team-role">Co-founder</span><span class="team-badge">AD</span></div>
+      <h3>Anik Dey</h3>
+      <p class="team-title">Chief Technology Officer</p>
+      <p class="team-edu">Cornell · Georgia Tech</p>
+      <p class="team-bio">Builds the systems and tooling that keep every Ivyfy engagement organized and on schedule.</p>
+    </article>
+    <article class="lead-card reveal">
+      <div class="team-top"><span class="team-role">Co-founder</span><span class="team-badge">KW</span></div>
+      <h3>Khandaker Wasi</h3>
+      <p class="team-title">Chief Information Officer</p>
+      <p class="team-edu">Cornell · Forbes 30u30</p>
+      <p class="team-bio">Forbes 30 Under 30 for 504&nbsp;Found, a nonprofit that reached 20,000+ students. Leads narrative and positioning.</p>
+    </article>
+  </div>
+  <div class="team-rest">
+    <article class="mini-card reveal">
+      <span class="team-badge">RV</span>
+      <h3 class="mini-name">Ryan Verma</h3>
+      <p class="mini-role">Head Consultant</p>
+      <p class="mini-edu">Harvard</p>
+    </article>
+    <article class="mini-card reveal">
+      <span class="team-badge">AK</span>
+      <h3 class="mini-name">Aarush Khadokoori</h3>
+      <p class="mini-role">Editor</p>
+      <p class="mini-edu">Carnegie Mellon</p>
+    </article>
+    <article class="mini-card reveal">
+      <span class="team-badge">KP</span>
+      <h3 class="mini-name">Krish Pai</h3>
+      <p class="mini-role">Editor</p>
+      <p class="mini-edu">Cornell</p>
+    </article>
+    <article class="mini-card reveal">
+      <span class="team-badge">JS</span>
+      <h3 class="mini-name">Jason Shih</h3>
+      <p class="mini-role">Compliance Engineer</p>
+      <p class="mini-edu">Berkeley</p>
+    </article>
   </div>
 </section>
 
-<section id="admits" class="wrap wheel-section">
+<!-- ============ ADMITS — testimonials in their words ============ -->
+<section id="admits" class="wrap section">
   <div class="section-head reveal">
-    <div class="eyebrow">In Their Words</div>
-    <h2>Spin the wheel. Hear from our admits.</h2>
+    <p class="kicker">In their words</p>
+    <h2>What our admits <em>actually say.</em></h2>
   </div>
-  <div class="wheel-layout reveal">
-    <div>
-      <div class="wheel-wrap">
-        <div class="wheel-pointer"></div>
-        <div class="wheel" id="wheel" tabindex="0" role="group" aria-label="Testimonial wheel — use arrow keys, drag, or scroll to browse admits" aria-roledescription="carousel">
-          <div class="wheel-ring" id="wheelRing"><!-- ticks injected by JS --></div>
-          <div class="wheel-hub">
-            <svg class="leaf-icon" viewBox="0 0 32 32"><path class="body" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/><path class="vein" d="M16 6v22"/></svg>
-          </div>
-        </div>
-      </div>
-      <div class="wheel-controls">
-        <button id="prevBtn" aria-label="Previous admit">‹</button>
-        <button id="nextBtn" aria-label="Next admit">›</button>
-      </div>
-      <p class="wheel-hint">drag, click a leaf, or scroll</p>
-    </div>
-    <div class="testimonial-card" id="testimonialCard">
-      <blockquote id="quoteText"></blockquote>
-      <div class="tmeta">
-        <span class="dash"></span>
-        <span id="nameText"></span>
-        <span class="school" id="schoolText"></span>
-      </div>
-    </div>
+  <div class="quote-grid">
+    <figure class="glass-quote reveal">
+      <blockquote>Ivyfy found the throughline I couldn't see myself. My essays finally sounded like me.</blockquote>
+      <figcaption><span class="q-name">Priya S.</span><span class="q-school">Admitted — Cornell</span></figcaption>
+    </figure>
+    <figure class="glass-quote reveal">
+      <blockquote>They rebuilt my activities list from scratch, and it changed how every school read my application.</blockquote>
+      <figcaption><span class="q-name">Marcus T.</span><span class="q-school">Admitted — Penn</span></figcaption>
+    </figure>
+    <figure class="glass-quote reveal">
+      <blockquote>I walked in with a strong transcript and no story. I walked out with both.</blockquote>
+      <figcaption><span class="q-name">Jordan K.</span><span class="q-school">Admitted — Princeton</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<section id="apply" class="wrap">
-  <div class="cta-banner reveal">
-    <h2>Your application deserves more than a template.</h2>
-    <p>Book a free 20-minute consult and we'll tell you exactly where your application stands today.</p>
-    <a href="#" class="btn btn-primary">Book a Free Consult</a>
+<!-- ============ CTA ============ -->
+<section class="wrap section">
+  <div class="cta-glass reveal">
+    <h2>Your application deserves <em>more than a template.</em></h2>
+    <p>Book a free 15-minute consult and we'll tell you where your application stands and what to do next.</p>
+    <a href="https://cal.com/soham-jariwala-4fvbkw/15min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book a Free Consult</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="footer-top">
-      <a href="#" class="logo">
-        <svg class="leaf-icon" viewBox="0 0 32 32"><path class="body" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/><path class="vein" d="M16 6v22"/></svg>
-        Ivyfy
+      <a href="#top" class="logo footer-logo">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path class="leaf" d="M16 2C9 8 4 14 4 20c0 6 5.5 10 12 10s12-4 12-10C28 14 23 8 16 2Z"/><path class="vein" d="M16 6v22"/></svg>
+        <span>Ivyfy</span>
       </a>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>Site</h4>
-          <a href="#method">Approach</a>
-          <a href="#advisors">Advisors</a>
-          <a href="#results">Results</a>
-          <a href="#admits">Admits</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="mailto:hello@ivyfy.co">hello@ivyfy.co</a>
-          <a href="#apply">Book a Consult</a>
-        </div>
-      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#method">Method</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#team">Team</a>
+        <a href="https://cal.com/soham-jariwala-4fvbkw/15min" target="_blank" rel="noopener">Book a Demo</a>
+      </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ivyfy. All rights reserved.</span>
-      <span>Cornell, NY</span>
+      <span>© 2026 Ivyfy · Ivy League Admissions, Engineered</span>
+      <span class="footer-loc">Ithaca, NY</span>
     </div>
   </div>
 </footer>
 
 <script src="ivyfy.js"></script>
-
 </body>
 </html>
